@@ -5,6 +5,7 @@ body {
   margin: auto;
 }
 
+
 header {
   text-align: center;
 }
@@ -50,7 +51,7 @@ section {
 }
 
 #gallery {
-  width: 75%
+  width: 60em;
 }
 
 .info {
@@ -84,7 +85,7 @@ section {
 } */
 
 .gallerypic {
-  height: 10em;
+  height: 13.09em;
   margin-left: auto;
   margin-right: auto;
   margin-top: .5em;
@@ -93,9 +94,11 @@ section {
 ol {
   list-style: decimal;
   list-style-position: inside;
+  line-height: 1.5em;
 }
 
 ul {
   list-style:square;
   list-style-position: inside;
+  line-height: 1.5em;
 }
