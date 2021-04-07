@@ -2,14 +2,12 @@
 
 ## About Me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+This webpage has a JavaScript game to get to know me a little better with 5 yes/no questions. The main page has some more information about me, along with a mini-gallery with pictures from my life.
 
-### Author: Peyton
+### Author: Peyton Mader
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
+TA Chance Harmon helped me use the developer tools in the browser, and with how to add background images on CSS style sheets. 
 
 ### Reflections and Comments
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+I learned that CSS takes me a very long time to create for a webpage, but I really like working with it overall. It gives me a great sense of satisfaction to see something visually coming together, and it makes me excited about opportunities in front-end design. 
