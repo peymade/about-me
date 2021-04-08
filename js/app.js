@@ -1,5 +1,6 @@
 'use strict'; 
 
+//Function 1
 //Prompt the user to enter their name, give a greeting
 let userName = prompt('Welcome to Peyton\'s guessing game site. What is your name?');
 console.log('Our user\'s name is '+ userName);
@@ -12,10 +13,13 @@ let gameAnswer = prompt('Okay ' + userName + ', would you like to play a game to
 let lowercaseGameAnswer = gameAnswer.toLowerCase();
 console.log(lowercaseGameAnswer, '(this is the lower case version)');
 
+
+//Not in a function, must be GLOBAL. Return score at the end of each function.
 // Set score variable for questions
 var score = 0;
 
-//Part 1 of Game 
+
+//Part 1 of Game, in Function 2
 
 //If answer is yes, then start the game. If it is not, them take them to the site. 
 if (lowercaseGameAnswer === 'yes'){
@@ -113,7 +117,7 @@ if (lowercaseGameAnswer === 'yes'){
   alert('Darn. You\'re not getting away with not playing a game, though. We\'ll move onto part two :)');
 }
 
-// Part 2 of Game
+// Part 2 of Game, Function 3
 
 //Make variables for a flag, a counter for the number of guesses, and the value of the correct answer.
 let numberCorrect = false;
@@ -145,7 +149,7 @@ while(guessNumOne > 0 && numberCorrect === false) {
 
 alert('My favorite number is 24, because it has so many factors and is so nice and symmetrical feeling.')
 
-// Part 3 of Game
+// Part 3 of Game Function 4
 
 alert('Now, we will move on to section 3 of the get-to-know-me-game.')
 
@@ -158,10 +162,13 @@ let guessNumTwo = 6;
 let activityCorrect = false;
 
 // As long as they have more guesses and they haven't gotten the answer yet, enter into the while loop
+
 while(guessNumTwo > 0 && activityCorrect === false) {
   let activityGuess = prompt('Can you guess one of the activites I\'ve enjoyed during quarantine? I will give you ' + guessNumTwo + ' tries.');
+
   // Iterate through the array to look for their answer
   for(let index = 0; index < myActivities.length; index++){
+
     // If their guess matches the current array item, tell them, and turn the flag to true, and add 1 to their score. 
     if (activityGuess === myActivities[index]){
       alert("Yes! You guessed one of them.");
