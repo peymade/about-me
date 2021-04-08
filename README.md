@@ -6,6 +6,8 @@ This webpage has a JavaScript game to get to know me a little better with 5 yes/
 
 ### Author: Peyton Mader
 
+### Drivers: Charles Bofferding, Rachel Freeland
+
 ### Links and Resources
 TA Chance Harmon helped me use the developer tools in the browser, and with how to add background images on CSS style sheets. 
 
