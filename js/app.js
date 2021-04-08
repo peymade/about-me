@@ -193,15 +193,15 @@ function getToKnowMe(){
     console.log(guessNumTwo);
   }
 }
-function finalAlerts() {
+function finalCountdown() {
   alert('The possible answers were: reading, playing piano, cooking, making jewelry, listening to music, and walking my dog. Press OK to see your total score for all 7 questions.')
   alert('Your score was: ' + score + ' out of 7. Great job! Press OK to move on to the site to learn more about me.')
 }
 
 
-//Chaz Function wrapping
+//Function wrapping
 askName();
 fiveQuestions();
 guessNumFunct();
 getToKnowMe();
-finalAlerts();
+finalCountdown();
