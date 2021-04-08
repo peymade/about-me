@@ -155,47 +155,53 @@ function guessNumFunct(){
   alert('My favorite number is 24, because it has so many factors and is so nice and symmetrical feeling.')
 }
 
+
+function getToKnowMe(){
+  // Part 3 of Game Function 4
+
+  alert('Now, we will move on to section 3 of the get-to-know-me-game.')
+
+  // Make array with favorite activities, and give a total number of guesses. Name is TWO because in the previous game, there is guessNumOne
+  let myActivities = ['reading', 'playing piano', 'cooking', 'making jewelry', 'listening to music', 'walking my dog'];
+  let guessNumTwo = 6;
+
+  // Create a flag (an on/off switch) to tell me that a condition is changed
+
+  let activityCorrect = false;
+
+  // As long as they have more guesses and they haven't gotten the answer yet, enter into the while loop
+
+  while(guessNumTwo > 0 && activityCorrect === false) {
+    let activityGuess = prompt('Can you guess one of the activites I\'ve enjoyed during quarantine? I will give you ' + guessNumTwo + ' tries.');
+
+    // Iterate through the array to look for their answer
+    for(let index = 0; index < myActivities.length; index++){
+
+      // If their guess matches the current array item, tell them, and turn the flag to true, and add 1 to their score. 
+      if (activityGuess === myActivities[index]){
+        alert("Yes! You guessed one of them.");
+        activityCorrect = true;
+        score = score + 1;
+      }
+    }
+    // If the flag was not turned true by the previous codeblock, tell them that their answer wasn't in the array.
+    if (activityCorrect === false){
+      alert('That was not one of the activities.');
+    }
+    // Decrement their guesses by 1
+    guessNumTwo--;
+    console.log(guessNumTwo);
+  }
+}
+function finalAlerts() {
+  alert('The possible answers were: reading, playing piano, cooking, making jewelry, listening to music, and walking my dog. Press OK to see your total score for all 7 questions.')
+  alert('Your score was: ' + score + ' out of 7. Great job! Press OK to move on to the site to learn more about me.')
+}
+
+
 //Chaz Function wrapping
 askName();
 fiveQuestions();
 guessNumFunct();
-
-// Part 3 of Game Function 4
-
-alert('Now, we will move on to section 3 of the get-to-know-me-game.')
-
-// Make array with favorite activities, and give a total number of guesses. Name is TWO because in the previous game, there is guessNumOne
-let myActivities = ['reading', 'playing piano', 'cooking', 'making jewelry', 'listening to music', 'walking my dog'];
-let guessNumTwo = 6;
-
-// Create a flag (an on/off switch) to tell me that a condition is changed
-
-let activityCorrect = false;
-
-// As long as they have more guesses and they haven't gotten the answer yet, enter into the while loop
-
-while(guessNumTwo > 0 && activityCorrect === false) {
-  let activityGuess = prompt('Can you guess one of the activites I\'ve enjoyed during quarantine? I will give you ' + guessNumTwo + ' tries.');
-
-  // Iterate through the array to look for their answer
-  for(let index = 0; index < myActivities.length; index++){
-
-    // If their guess matches the current array item, tell them, and turn the flag to true, and add 1 to their score. 
-    if (activityGuess === myActivities[index]){
-      alert("Yes! You guessed one of them.");
-      activityCorrect = true;
-      score = score + 1;
-    }
-  }
-  // If the flag was not turned true by the previous codeblock, tell them that their answer wasn't in the array.
-  if (activityCorrect === false){
-    alert('That was not one of the activities.');
-  }
-  // Decrement their guesses by 1
-  guessNumTwo--;
-  console.log(guessNumTwo);
-}
-
-alert('The possible answers were: reading, playing piano, cooking, making jewelry, listening to music, and walking my dog. Press OK to see your total score for all 7 questions.')
-alert('Your score was: ' + score + ' out of 7. Great job! Press OK to move on to the site to learn more about me.')
-
+getToKnowMe();
+finalAlerts();
