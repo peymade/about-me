@@ -1,24 +1,23 @@
 body {
   background-color: #c9a3db80;
-  background-image: url('/class_02/about-me/img/canyon2.JPG');
+  background-image: url('/img/canyon2.JPG');
   background-repeat: no-repeat;
   margin: auto;
   line-height: 1.5em;
-
 }
-
 
 header {
   text-align: center;
 }
+
 header img {
   width: .5em;
 }
 
 h1 {
+  color:rgb(41, 1, 39);
   font-size: 6em;
   font-family: cursive;
-  color:rgb(41, 1, 39)
 }
 
 h2 {
@@ -27,9 +26,8 @@ h2 {
 }
 
 h3 {
+  color: rgb(255, 255, 255);
   font-size: 1.5em;
-  color: rgb(89, 54, 153);
-  margin-bottom: .5em;
 }
 
 section {
@@ -40,16 +38,17 @@ section {
 }
 
 #intro {
-  text-align: center;
+  border: 5px double navy;
   max-width: 40em;
   margin: auto;
-  border: 5px double navy;
+  text-align: center;
 }
 
 #interests {
   text-align: center;
   max-width: 40em;
   margin: auto;
+  clear: both;
 }
 
 #gallery {
@@ -57,37 +56,34 @@ section {
   border: 5px double navy;
 }
 
-.info {
-  width: 300px;
-  height: 300px;
-
-}
-/* 
 #infoboxes {
-  width:800px;
-  height:200px;
-  background-color: royalblue;
-  padding: 20px 15px 20px 15px;
-  display: block;
-} */
+  margin: auto 10%;
 
-/* #leftbox {
-  float: left;
-  width: 220px;
-  height: 160px;
 }
 
-#middlebox {
+.info {
+  width: 25%;
   float: left;
-  width: 220px;
-  height: 160px;
+  height: 200px;
+  overflow: scroll;
 }
 
-#rightbox {
-  float: right;
-  width: 220px;
-  height: 160px;
-}  */
+.info img {
+  width: 100%;
+} 
+
+.info h3 {
+  position: absolute;
+  padding: 0px;
+  background-color: rgb(79, 125, 165);
+  width: 20%;
+  text-align: center;
+  height: 30px;
+}
+
+#leftbox, #middlebox {
+ margin-right: 5%;
+}
 
 .gallerypic {
   height: 13.09em;
@@ -104,7 +100,17 @@ ol {
 }
 
 ul {
+  margin-top: 40px;
   list-style:square;
   list-style-position: inside;
   line-height: 1.5em;
+}
+
+footer {
+  background-color: white;
+  margin: 100px;
+  text-align: center;
+  max-width: 200px;
+  float: right;
+  padding: 10px;
 }
